@@ -1,5 +1,4 @@
 import React, {useEffect, useMemo, useRef, useState} from "react";
-// import "./App.scss"
 import PostList from ".././Components/PostList";
 import RcButton from ".././Components/UI/Buttons/RcButton";
 import PostForm from ".././Components/PostForm";
@@ -51,9 +50,6 @@ function Posts() {
         setModal(false)
     }
 
-
-
-
     // Получение пост из дочернего компонента
     const removePost = (post) =>{
         setPosts(posts.filter(p=>p.id !== post.id))
@@ -63,8 +59,6 @@ function Posts() {
         setPage(page)
         fetchPosts(limit, page)
     }
-
-
 
     return (
         <div className="App">

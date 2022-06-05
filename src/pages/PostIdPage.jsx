@@ -4,13 +4,9 @@ import {useFetching} from "../Components/hooks/useFetching";
 import PostService from "../Components/API/PostService";
 import Loader from "../Components/UI/Loader/Loader";
 
-
 const PostIdPage = () => {
 
     const params = useParams()
-
-    //console.log(params)
-
     const [post, setPost] = useState({})
     const [comments, setComments]=useState([])
     const [fetchPostById, isLoading, error] = useFetching(async (id)=>{

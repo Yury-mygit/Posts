@@ -15,7 +15,6 @@ const PostForm = ({create}) =>{
         }
         create(newPost)
         setPost({title:'',body:''})
-
     }
 
 
